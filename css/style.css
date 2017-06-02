@@ -46,21 +46,26 @@ html, body{
     min-height: 1px;
     margin:0 2% 20px;
   }
+
+  /* Media queries */
+
   @media (min-width: 768px) {
      .container {
        width: 750px;
+       background-color: red;
      }
    }
    @media (min-width: 992px) {
      .container {
        width: 970px;
+
      }
      .one-half {
        width:46%;
      }
      .one-third {
        width:29.33333%;
-     }
+            }
      .one-fourth {
        width:21%;
      }
@@ -68,7 +73,7 @@ html, body{
    @media (min-width: 1200px) {
      .container {
        width: 1170px;
-     }
+           }
    }
 
    /* HEADER */
