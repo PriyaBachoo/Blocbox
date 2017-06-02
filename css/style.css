@@ -49,10 +49,16 @@ html, body{
 
   /* Media queries */
 
+  @media (min-width: 320px) {
+     .container {
+       width: 320px;
+     }
+   }
+
   @media (min-width: 768px) {
      .container {
        width: 750px;
-       background-color: red;
+
      }
    }
    @media (min-width: 992px) {
