@@ -21,6 +21,7 @@ html, body{
    font-size:16px;
    line-height: 19px;
    font-weight: 100;
+
  }
 
  /* GRID */
@@ -47,6 +48,7 @@ html, body{
     position:absolute;
     min-height: 1px;
     margin:0 2% 20px;
+
   }
 
   .one-half{
@@ -138,7 +140,10 @@ text-decoration: none;
 
 
 
+header nav h3{
 
+  margin: 10px 0 0 0;
+}
 
  header nav ul > li {
    list-style-type: none;
@@ -178,9 +183,18 @@ text-decoration: none;
    font-weight: 100;
    margin:10px 0 40px;
  }
+
  header .hero img {
    display: block;
    margin:3em auto 0;
+ }
+
+ header .hero a.btn{
+       margin: 0 auto;
+       margin-bottom: -20px;
+       display: block;
+       width: 200px;
+
  }
 
  /* BUTTONS */
@@ -204,7 +218,7 @@ text-decoration: none;
    text-align: center;
    display:block;
    position:relative;
-   padding:4em 0;
+   padding:4em 0 0 0;
  }
 
  .benefits div h2, .benefits p {
@@ -231,9 +245,12 @@ text-decoration: none;
 
 
  .benefits img {
-    margin:0;
-/*align-items:baseline;*/
-   display: inline;
+   opacity: 0.8;
+   vertical-align: middle;
+
+  /*  margin:0;
+align-items:baseline;
+     display: inline;
      float:left;
      opacity: 0.8;
      shadow: 0 2px 3px 0 rgba(0,0,0,0.50);
@@ -334,6 +351,7 @@ text-decoration: none;
    bottom:20px;
    left:20px;
    right:20px;
+
  }
  .small {
    font-size: 12px;
@@ -352,7 +370,11 @@ text-decoration: none;
   }
   .testimonials ul li {
     list-style-type: none;
+
   }
+
+
+
   .testimonials blockquote {
     color:#FFFFFF;
     text-align: left;
@@ -386,20 +408,26 @@ text-decoration: none;
      display: inline-block;
      margin:20px 10px 0 0;
 
+
+
    }
 
   .testimonials p.name {
-     float: left;
+     float:inherit;
      display: inline-block;
      text-align: left;
      font-size:13px;
      margin-top: 10px;
+
     /* vertical-align: top;*/
+
    }
+
+
 
 .addctc{
 text-align: center;
- margin-top: 10px;
+ margin-top: -40px;
  margin-bottom: 10px;
  display:block;
  position:relative;
@@ -417,13 +445,17 @@ text-align: center;
  color:#4a4a4a;
 
 }
+.addctc p {
+margin-bottom: 40px;
+
+}
 
 
    /* FOOTER */
     footer {
       background-color: #018293;
       color: #FFFFFF;
-      height: 150px;
+    /*  height: 150px;*/
       position: relative;
       overflow: hidden;
       z-index: 0;
@@ -434,13 +466,22 @@ text-align: center;
       text-align: center;
       margin: 10px auto 0;
     }
+    footer nav ul {
+
+      margin-left: -30px;
+
+    }
+
     footer nav ul li {
-      list-style-type: none;
+      list-style-type:none;
       display: inline;
+
+
     }
     footer nav ul li a {
       color:#ffffff;
       text-decoration: none;
+
     }
     footer .right-footer-block {
       background-color: transparent;
@@ -678,3 +719,15 @@ text-align: center;
     line-height: 18px;
     margin:5px 0 0;
   }
+
+
+
+.left-nav li a:hover{
+  background-color:#FFC107;
+}
+
+ .left-nav li a:active{
+  background-color: #018293;
+  font-size: 18px;
+
+}
