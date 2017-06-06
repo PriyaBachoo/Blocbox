@@ -201,7 +201,7 @@ header nav h3{
  .btn {
    border-radius: 4px;
    color:#4A4A4A;
-   font-weight: 700;
+   font-weight: 500;
    text-decoration: none;
    padding:10px 30px;
    background: #FFC107;
@@ -418,6 +418,7 @@ align-items:baseline;
      text-align: left;
      font-size:13px;
      margin-top: 10px;
+     font-weight: 400;
 
     /* vertical-align: top;*/
 
@@ -514,14 +515,79 @@ margin-bottom: 40px;
       }
 
       .left-nav {
-         height: 100vh;
-         width:14.66666667%;
+         height: 100%;
+         width:280px;
          color:#FFFFFF;
          background: #00BCD4;
          float:left;
-         position: fixed;
-         display:block;
+         position:absolute;
+         -webkit-transition: all 0.3s ease-in-out;
+         -moz-transition: all 0.3s ease-in-out;
+         -o-transition: all 0.3s ease-in-out;
+         transition: all 0.3s ease-in-out;
+         transform: translate(-280px,0);
+           -webkit-transform: translate(-280px,0); /** Chrome & Safari **/
+           -o-transform: translate(-280px,0); /** Opera **/
+           -moz-transform: translate(-280px,0); /** Firefox **/
        }
+
+
+
+       .left-nav.open {
+          display:block;
+          width:280px;
+          background: #00BCD4;
+          -webkit-transition: all 0.3s ease-in-out;
+          -moz-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+          transform: translate(0,0);
+            -webkit-transform: translate(0,0); /** Chrome & Safari **/
+            -o-transform: translate(0,0); /** Opera **/
+            -moz-transform: translate(0,0); /** Firefox **/
+            z-index: 100;
+        }
+        .hamburger {
+          position:absolute;
+          z-index: 1000;
+          background:#00BCD4;
+          color:#FFF;
+          text-decoration: none;
+          font-size: 22px;
+          padding: 10px 15px;
+          border-radius: 4px;
+          left: 5px;
+          top: 15px;
+        }
+        @media (min-width:992px) {
+           .left-nav {
+             height: 100vh;
+             width:14.66666667%;
+             color:#FFFFFF;
+             background: #00BCD4;
+             float:left;
+             position: fixed;
+             display:block;
+             transform: translate(0,0);
+             -webkit-transform: translate(0,0); /** Chrome & Safari **/
+             -o-transform: translate(0,0); /** Opera **/
+             -moz-transform: translate(0,0); /** Firefox **/
+           }
+           .left-nav.open {
+             width:14.66666667%;
+             transform: translate(0,0);
+             -webkit-transform: translate(0,0); /** Chrome & Safari **/
+             -o-transform: translate(0,0); /** Opera **/
+             -moz-transform: translate(0,0); /** Firefox **/
+           }
+           .hamburger {
+             display:none;
+           }
+         }
+
+
+
+
 
        .left-nav .site-logo-small {
           padding:20px 0;
@@ -533,6 +599,7 @@ margin-bottom: 40px;
            padding:0 6%;
          }
          .left-nav .items p {
+            font-family: "Montserrat", Helvetica, Arial, sans-serif;
             font-weight: 600;
             text-transform: uppercase;
             font-size: 12px;
@@ -547,6 +614,7 @@ margin-bottom: 40px;
  .left-nav .items ul li {
    list-style-type: none;
    margin-bottom: 15px;
+
  }
 
  .left-nav .items ul li a {
@@ -582,7 +650,8 @@ margin-bottom: 40px;
     display: inline-block;
     vertical-align: top;
     padding-top: 8px;
-    font-weight: 400;
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-weight: 300;
     margin:0 0 0 10px;
   }
   .left-nav .settings a {
@@ -719,7 +788,6 @@ margin-bottom: 40px;
     line-height: 18px;
     margin:5px 0 0;
   }
-
 
 
 .left-nav li a:hover{
